@@ -41,7 +41,7 @@ Si al acercar o alejar un objeto los valores cambian correctamente, significa qu
 
 Simular en Tinkercad e incluir el link de la simulación.
 En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
-En la simulación, si ponés un objeto a 10 cm, el monitor serial debería mostrar una lectura de 10 cm, con pequeñas variaciones por el tiempo del pulso.
+En la simulación, si la pelota entra al arco, se debería sumar un número al contador mostrado por el display, hasta que se toque el pulsador, lo que reiniciaría el contador.
 
 ¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
-Podríamos darnos cuenta de si funciona mal si los valores cambian sin mover nada, ya que puede haber un error en el código o si no imprime nada, puede ser que el pin TRIG o ECHO esté conectado a un pin incorrecto.
+Podríamos darnos cuenta de si funciona mal si los valores cambian sin mover nada, ya que puede haber un error en el código o si no imprime nada, puede ser que el pin TRIG o ECHO esté conectado a un pin incorrecto o que el componente este fallado.
