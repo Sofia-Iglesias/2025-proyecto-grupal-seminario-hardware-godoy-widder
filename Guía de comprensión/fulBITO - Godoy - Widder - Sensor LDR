@@ -1,17 +1,44 @@
 Guía de Preguntas
-Nombre del componente: (escriba aquí nombre del componente)
+Nombre del componente: (Sensor LDR)
 
 ¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+El sensor LDR es un sensor, el cual detecta la cantidad de luz que recibe. Su resistencia cambia según la luz, si hay mucha luz, su resistencia bajapero si hay poca luz, su resistencia sube. Su función principal es medir la intensidad de la luz ambiental.
+
 ¿Qué tipo de señal utiliza para comunicarse con Arduino?
+El sensor LDR trabaja con señales analógicas, porque la cantidad de luz puede variar de forma gradual.
+Por eso, se conecta a un pin analógico del Arduino, que convierte eso en valores de 0 a 1023.
+
 ¿Cuál es el rango de valores que puede entregar o recibir el componente?
+Al estar en completa oscuridad, el valor suele estar cerca de 0 porque la resistencia es muy alta, pero con mucha luz el valor puede llegar cerca de 1023 porque la resistencia baja y el voltaje sube.
+
 ¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+El LDR tiene dos patas las cuales no tienen polaridad. Se conecta una pata del LDR a 5V, la otra a un pin analógico y también a una resistencia. El otro extremo de la resistencia va a GND.
+De esta manera, el LDR y la resistencia trabajan juntos para generar un voltaje variable según la luz.
+
 ¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+Nosotros elejimos el pin analógico A0 porque el LDR envía una señal que cambia gradualmente según la intensidad de luz, pero también lo conectamos a 5V y a una resistencia la cual a su vez llega a GND.
+
 Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
 ¿Cuál es el principio de funcionamiento del componente?
+El LDR funciona con un material semiconductivo que cambia su resistencia según la luz que recibe. Cuando hay mucha luz, los electrones del material se activan y la resistencia disminuye, dejando pasar más corriente. Pero cuando hay poca luz, la resistencia aumenta y pasa menos corriente.
+El Arduino detecta ese cambio de corriente como una variación de voltaje.
+
 ¿Utiliza alguna librería particular para programarlo?
+No, no necesita ninguna libraría en perticular para programarlo, por lo que no utilizamos ninguna.
+
 ¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+El programa lee el valor analógico y lo guarda en una variable. Con ese dato se puede encender o apagar un LED, o mostrar el valor en el monitor serial.
+
 ¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+Las limitaciones o precauciones que hay que tener al momento de usarlo son no exponerlo directamente a fuentes muy fuertes de luz porque puede dañarse y usar siempre una resistencia en serie para evitar cortocircuitos.
+
 ¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+Se podría probar con un código básico que lea y muestre el valor de luz en el monitor serial. Si al tapar el sensor el número baja y al acercar una luz, el LDR funciona correctamente.
+
 Simular en Tinkercad e incluir el link de la simulación. 
 En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+En la simulación, si el ambiente está oscuro, el led se enciende para iluminar, mientras que si este esta más iluminado, este se apaga ya que no es necesario que ilumine. De todas formas, se puede encender manualmente con el pulsador.
+
 ¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+Podría fallar si el valor siempre da 0 porque el LDR o la resistencia pueden estar mal conectados o si los valores cambian muy poco, puede ser que el LDR esté dañado.
+
