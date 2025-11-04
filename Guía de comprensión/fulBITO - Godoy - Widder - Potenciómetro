@@ -16,7 +16,7 @@ Cuando el potenciómetro está conectado a 5V y GND, si el eje está completamen
 El potenciómetro tiene tres patas, VCC se conecta al 5v del Arduino, GND se conecta a tierra del Arduino y el pin central que se conecta a un pin analógico.
 
 ¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
-Nosotros elegimos el pin analógico A1 porque el potenciómetro entrega una señal variable, no solo 0 o 1.
+Nosotros elegimos el pin analógico A0 porque el potenciómetro entrega una señal variable, no solo 0 o 1.
 Arduino convierte esa señal en un valor de 0 a 1023 mediante su conversor analógico-digital.
 
 Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
