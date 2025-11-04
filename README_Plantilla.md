@@ -20,11 +20,11 @@
 
 - `Led RGB`  
 - `Display de 7 segmentos`  
-- `Buzzer`
+- `Servomotor`
 - `Sensor ultrasónico`
 - `Sensor LDR`
 - `Potenciómetro`
-- `Pulsador`
+- `2 Pulsadores`
 - `Protoboard`
 - `Arduino UNO`
 
