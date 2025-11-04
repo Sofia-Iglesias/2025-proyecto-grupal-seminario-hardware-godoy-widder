@@ -2,21 +2,20 @@ Guía de Preguntas
 Nombre del componente: (Display 7 segmentos)
 
 ¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
-El display de 7 segmentos es un actuador, por lo que recibe señales eléctricas del Arduino y muestra una información visual, números del 0 al 9, encendiendo distintos segmentos de luz.
+El display de 7 segmentos es un actuador, por lo que recibe señales eléctricas del Arduino y muestra una información visual, números del 0 al 9, encendiendo distintos segmentos de luz. Estos segmentos de luz son leds, los cuales se encienden o apagan en caso de recibir o no señales del Arduino mediante las cuales son capaces de representar números.
 
 ¿Qué tipo de señal utiliza para comunicarse con Arduino?
-El display usa señales digitales, cada segmento es un LED controlado por el Arduino a través de un pin digital que envía una señal HIGH que enciende o LOW que apaga.
+El display usa señales digitales, cada segmento es un led controlado por el Arduino a través de un pin digital que envía una señal HIGH que enciende o LOW que apaga, permitiendo asi mostrar números y hasta incluso algunas letras.
 
 ¿Cuál es el rango de valores que puede entregar o recibir el componente?
-El rango de valores que recibe el display de 7 segmentos es de 2, encendodo u apagado. Los pines de entrada reciben 0V osea LOW o 5V osea HIGH. Los valores que puede representar van del 0 al 9.
+El rango de valores que recibe el display de 7 segmentos es de 2, encendodo u apagado. Los pines de entrada reciben 0V osea LOW o 5V osea HIGH. Los valores que puede representar van del 0 al 9, por lo que cada segmento es capaz de encenderse u apagarse independientemente.
 
 ¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
-El display tiene 10 pines, 7 pines para los segmentos a, b, c, d, e, f, g y 1 o 2 pines comunes dependiendo del tipo de display.
-A veces incluye un punto decimal en caso de ser necesario.
-Hay 2 tipos, cátodo común en el cual todos los cátodos de los LEDs se unen a GND, y los pines de los segmentos reciben señal HIGH para encenderse y ánodo común, en el cual todos los ánodos se conectan a 5V, y los segmentos se encienden con una señal LOW.
+El display tiene 10 pines, 7 pines para los segmentos a, b, c, d, e, f, g y 2 pines comunes dependiendo del tipo de display. En nuestro caso también incluye un punto decimal.
+Hay 2 tipos, cátodo común en el cual todos los cátodos de los leds se unen a GND, y los pines de los segmentos reciben señal HIGH para encenderse y ánodo común, en el cual todos los ánodos se conectan a 5V, y los segmentos se encienden con una señal LOW. En nuestro caso, el display es de cátodo común.
 
 ¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
-Nosotros conectamos los segmentos del display a los pines digitales 3, 4, 5, 7, 11, 12, 13 y los otros 2 a GND. Utilizamos estos pines ya que el display de 7 segmentos utiliza pines digitales al funcionar con 2 estados, HIGH y LOW.
+Nosotros conectamos los segmentos del display a los pines digitales 3, 4, 5, 7, 11, 12, 13 y los otros 2 a GND dejando el pin punto del display sin conectar ya que no resulta necesario. Utilizamos estos pines ya que el display de 7 segmentos utiliza pines digitales al funcionar con 2 estados, HIGH y LOW, y al ser de cátodo común, conectamos estos dos pines a 5v.
 
 Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
 ¿Cuál es el principio de funcionamiento del componente?
@@ -35,7 +34,9 @@ Las limitaciones o precauciones que hay que tener al usarlo son usar resistencia
 ¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
 Se puede probar encendiendo los segmentos 1 por 1 con un codigo simple para comprobarlo individualmente.
 
-Simular en Tinkercad e incluir el link de la simulación. 
+Simular en Tinkercad e incluir el link de la simulación.
+
+
 En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
 En la simulación, el display debería mostrar los números correctamente teniendo en cuenta el código el cual se la haya especificado.
 
