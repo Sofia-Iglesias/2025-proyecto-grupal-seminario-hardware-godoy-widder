@@ -1,0 +1,30 @@
+Guía de Preguntas
+Nombre del componente: (Display 7 segmentos)
+
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+El display de 7 segmentos es un actuador, por lo que recibe señales eléctricas del Arduino y muestra una información visual, números del 0 al 9, encendiendo distintos segmentos de luz.
+
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+El display usa señales digitales, cada segmento es un LED controlado por el Arduino a través de un pin digital que envía una señal HIGH que enciende o LOW que apaga.
+
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+El rango de valores que recibe el display de 7 segmentos es de 2, encendodo u apagado. Los pines de entrada reciben 0V osea LOW o 5V osea HIGH. Los valores que puede representar van del 0 al 9.
+
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+El display tiene 10 pines, 7 pines para los segmentos a, b, c, d, e, f, g y 1 o 2 pines comunes dependiendo del tipo de display.
+A veces incluye un punto decimal en caso de ser necesario.
+Hay 2 tipos, cátodo común en el cual todos los cátodos de los LEDs se unen a GND, y los pines de los segmentos reciben señal HIGH para encenderse y ánodo común, en el cual todos los ánodos se conectan a 5V, y los segmentos se encienden con una señal LOW.
+
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+
+
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+¿Cuál es el principio de funcionamiento del componente?
+¿Utiliza alguna librería particular para programarlo?
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+Simular en Tinkercad e incluir el link de la simulación. 
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+
