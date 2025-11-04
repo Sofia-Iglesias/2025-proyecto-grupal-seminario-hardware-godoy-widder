@@ -36,8 +36,9 @@ Las limitaciones o precauciones que hay que tener al momento de usar un servo ss
 ¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
 Para esto se puede probar algun código fácil el cual le envíe instrucciónes al servo de hacia donde moverse. Si este las realiza correctamente, su funcionamiento es el adecuado.
 
-##Simular en Tinkercad e incluir el link de la simulación. 
+Simular en Tinkercad e incluir el link de la simulación. 
 En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
-En nuesra simulación, al tocar el 
+En nuesra simulación, al presionar el pulsador, el servo se mueve 90 grados, este esta funcionando correctamente y es capaz de patear una pelota.
 
 ¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+El servo podría fallar de varias maneras, si no se mueve puede estar mal conectado o tener un error de código, si tiembla o vibra puede ser que no esté recibiendo suficiente corriente y si se calienta mucho, probablemente esté forzado.
