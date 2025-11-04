@@ -47,3 +47,5 @@
 
 - `Realización física del proyecto`
 - `Diseño 3D de componentes adicionales`
+
+Link a la simulación: https://www.tinkercad.com/things/ghHdiRQp2EX-tp-hard-fulbito/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits
