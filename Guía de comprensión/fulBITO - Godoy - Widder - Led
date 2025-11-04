@@ -16,7 +16,7 @@ El LED tiene dos patas, el Ánodoes la pata más larga y va al pin digital de sa
 Se debe colocar una resistencia entre el LED y el Arduino para limitar la corriente y evitar que se queme.
 
 ¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
-Para el led, nosotros utilizamos el pin digital 7 del arduino, ya que cumple la condición de ser un pin digital.
+Para el led, nosotros utilizamos el pin digital 6 del arduino, ya que cumple la condición de ser un pin digital.
 
 Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
 ¿Cuál es el principio de funcionamiento del componente?
@@ -37,7 +37,7 @@ Para verificar que funciona correctamente te puede probar un codigo fácil que l
 
 Simular en Tinkercad e incluir el link de la simulación. 
 En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
-De funcionar correctamente, esperamos que el led se encienda al estar en condiciones de baja luminosidad gracias al sensor LDR. También se puede controlar su encendido manualmente gracias al pulsador, y regular el brillo con el potenciómetro.
+De funcionar correctamente, esperamos que el led se encienda al estar en condiciones de baja luminosidad gracias al sensor LDR. También se puede regular el brillo con el potenciómetro.
 
 ¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
 Las posibles fallas del componente podrían ser si el LED no enciende estar conectado al revés, si se quema, faltó la resistencia o el voltaje fue demasiado alto o también puede llegar a tener algun tipo de falla la cual afecte su funcionamiento.
