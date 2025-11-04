@@ -1,5 +1,5 @@
 Guía de Preguntas
-Nombre del componente: (escriba aquí nombre del componente)
+Nombre del componente: (Led)
 
 ¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
 El LED es un actuador, el cualresponde a una señal del Arduino emitiendo luz cuando este le envía corriente eléctrica. Su función principal es emitir luz cuando pasa corriente eléctrica.
