@@ -16,15 +16,28 @@ A veces incluye un punto decimal en caso de ser necesario.
 Hay 2 tipos, cátodo común en el cual todos los cátodos de los LEDs se unen a GND, y los pines de los segmentos reciben señal HIGH para encenderse y ánodo común, en el cual todos los ánodos se conectan a 5V, y los segmentos se encienden con una señal LOW.
 
 ¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
-
+Nosotros conectamos los segmentos del display a los pines digitales 3, 4, 5, 7, 11, 12, 13 y los otros 2 a GND. Utilizamos estos pines ya que el display de 7 segmentos utiliza pines digitales al funcionar con 2 estados, HIGH y LOW.
 
 Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
 ¿Cuál es el principio de funcionamiento del componente?
+Cada segmento del display es un LED, por lo que el Arduino envía corriente al pin del segmento que se desea encender.
+Encendiendo diferentes combinaciones de segmentos se forman los números del 0 al 9.
+
 ¿Utiliza alguna librería particular para programarlo?
+Si bien puede llegar a utilizarse una librería para este, nosotros no la usamos.
+
 ¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+El dato de la entrada es enviado por el arduino hacia el display, el cual representa esta información encendiendo los distintos segmentos correspondientes para representar el número deseado.
+
 ¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+Las limitaciones o precauciones que hay que tener al usarlo son usar resistencias porque los LEDs internos se pueden quemar si reciben más de 20 mA y verificar si el display es ánodo o cátodo común antes de programarlo.
+
 ¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+Se puede probar encendiendo los segmentos 1 por 1 con un codigo simple para comprobarlo individualmente.
+
 Simular en Tinkercad e incluir el link de la simulación. 
 En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
-¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+En la simulación, el display debería mostrar los números correctamente teniendo en cuenta el código el cual se la haya especificado.
 
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+Las posibles fallas del  display pueden ser si no se encienden algunos segmentos, puede ser que estén mal conectados o que la resistencia esté dañada y si no se enciende nada, revisar si el pin común está bien conectado.
