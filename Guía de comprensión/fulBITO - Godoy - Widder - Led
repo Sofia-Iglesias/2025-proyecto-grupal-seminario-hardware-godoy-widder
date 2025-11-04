@@ -1,0 +1,44 @@
+Guía de Preguntas
+Nombre del componente: (escriba aquí nombre del componente)
+
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+El LED es un actuador, el cualresponde a una señal del Arduino emitiendo luz cuando este le envía corriente eléctrica. Su función principal es emitir luz cuando pasa corriente eléctrica.
+
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+El LED utiliza señales digitales, cuando el Arduino envía HIGH, el LED se enciende, mientras que cuando envía LOW, el LED se apaga.
+También puede controlarse con señales PWM (modulación por ancho de pulso) para cambiar su brillo gradualmente.
+
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+En una conexión digital normal, el led puede tomar solamente 2 valores, 0 y 1, es decir, apagado y encendido. Sin embargo, si se usa con PWM, el valor puede ir de 0 a 255.
+
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+El LED tiene dos patas, el Ánodoes la pata más larga y va al pin digital de salida del Arduino. El Cátodo es la pata más corta y va a GND del Arduino.
+Se debe colocar una resistencia entre el LED y el Arduino para limitar la corriente y evitar que se queme.
+
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+Para el led, nosotros utilizamos el pin digital 7 del arduino, ya que cumple la condición de ser un pin digital.
+
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+¿Cuál es el principio de funcionamiento del componente?
+El LED es un diodo semiconductor que deja pasar corriente solo en una dirección. Cuando los electrones pasan por el material del LED, liberan energía en forma de luz.
+El color del LED depende del material interno.
+
+¿Utiliza alguna librería particular para programarlo?
+No, este no necesita ningúna librería especial para programarlo, por lo que no nos hizo falta utilizar una.
+
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+En el programa, se define con digitalWrite en que estado se quiere que este el pin al cual esta conectado el led, es decir, HIGH o LOW. El Arduino envía corriente según el valor indicado, y el LED responde encendiéndose.
+
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+Las limitaciones o precauciones a tener en cuenta son siempre usar una resistencia en serie para limitar la corriente y no quemarlo y respetar la polaridad porque si se conecta al revés, no se enciende.
+
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+Para verificar que funciona correctamente te puede probar un codigo fácil que lo encienda y apague. Si sucede esto, significa que esta bien conectado y el codigo funciona.
+
+Simular en Tinkercad e incluir el link de la simulación. 
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+De funcionar correctamente, esperamos que el led se encienda al estar en condiciones de baja luminosidad gracias al sensor LDR. También se puede controlar su encendido manualmente gracias al pulsador, y regular el brillo con el potenciómetro.
+
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+Las posibles fallas del componente podrían ser si el LED no enciende estar conectado al revés, si se quema, faltó la resistencia o el voltaje fue demasiado alto o también puede llegar a tener algun tipo de falla la cual afecte su funcionamiento.
+
