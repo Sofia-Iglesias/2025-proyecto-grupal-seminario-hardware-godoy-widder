@@ -20,7 +20,7 @@
 
 - `Led RGB`  
 - `Display de 7 segmentos`  
-- `Servomotor`
+- `Buzzer`
 - `Sensor ultrasónico`
 - `Sensor LDR`
 - `Potenciómetro`
