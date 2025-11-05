@@ -36,6 +36,8 @@ Las limitaciones o precauciones a tener en cuenta son siempre usar una resistenc
 Para verificar que funciona correctamente te puede probar un codigo fácil que lo encienda y apague. Si sucede esto, significa que esta bien conectado y el codigo funciona.
 
 Simular en Tinkercad e incluir el link de la simulación. 
+https://www.tinkercad.com/things/7aSB6ZnM06f-simulacion-led/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits
+
 En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
 De funcionar correctamente, esperamos que el led se encienda al estar en condiciones de baja luminosidad gracias al sensor LDR. También se puede regular el brillo con el potenciómetro.
 
