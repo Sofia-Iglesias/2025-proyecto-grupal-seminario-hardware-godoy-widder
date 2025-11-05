@@ -48,8 +48,8 @@
 
 **`Dificultades:`**
 
-- `Programación display 7 segmentos`  
-- `Progamación sensor ultrasónico
+- `Programación display 7 segmentos`
+- `Programación Sensor ultrasónico`
 
 **`Próximos Pasos:`**
 
