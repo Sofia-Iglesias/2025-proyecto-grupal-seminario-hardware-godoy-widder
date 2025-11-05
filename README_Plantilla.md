@@ -49,3 +49,4 @@
 - `Diseño 3D de componentes adicionales`
 
 Link a la simulación: https://www.tinkercad.com/things/ghHdiRQp2EX-tp-hard-fulbito/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits
+Diagramas: https://drive.google.com/file/d/1_n9-y71CqFvV7B7twQ2t8BHC3ZL2LE6w/view?usp=sharing
