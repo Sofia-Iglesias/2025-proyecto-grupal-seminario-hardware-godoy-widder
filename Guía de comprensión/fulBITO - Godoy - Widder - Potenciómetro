@@ -36,7 +36,9 @@ Las limitaciones o precauciones que hay que tener son no forzar el eje más all�
 ¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
 Se puede probar con un código simple que muestre en el monitor serial los valores del potenciómetro. Si los valores cambian de 0 a 1023 al girar laperila, el potenciómetro funciona bien.
 
-Simular en Tinkercad e incluir el link de la simulación. 
+Simular en Tinkercad e incluir el link de la simulación.
+https://www.tinkercad.com/things/2WACxMZytyw-simulacion-potenciometro/editel
+
 En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
 En la simulación esperaríamos lograr que el brillo del led varíesegun la posición de la perilla del potenciómetro.
 
