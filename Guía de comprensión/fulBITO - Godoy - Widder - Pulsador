@@ -33,6 +33,8 @@ Las limitaciones o precausiones que hay que tener al usar un pulsador son usar s
 Se podría probar con un código básico que muestre en el monitor serial si el botón está presionado o no.
 
 Simular en Tinkercad e incluir el link de la simulación.
+https://www.tinkercad.com/things/fYa4ftdTHK5-simulacion-pulsador/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits
+
 En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
 En la simulación, cuando se presione el botón, el LED debería encenderse, mientras que al soltarse se apaga.
 
