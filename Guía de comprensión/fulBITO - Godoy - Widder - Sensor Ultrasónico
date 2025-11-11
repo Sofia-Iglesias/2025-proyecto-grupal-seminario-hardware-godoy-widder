@@ -1,0 +1,49 @@
+Guía de Preguntas
+Nombre del componente: (Sensor Ultrasónico)
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+El sensor ultrasónico es un sensor, no un actuador, por lo que su función es detectar información del entorno y enviarla al Arduino para que la procese.
+En este caso, el sensor ultrasónico detecta distancias usando ondas de sonido inaudibles, las cuales rebotan contra un objeto, y el sensor mide el tiempo que tarda en regresar.
+Con ese dato, el Arduino calcula qué tan lejos está el objeto.
+
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+El sensor se comunica con Arduino usando señales digitales. El pin TRIG envía una señal digital desde Arduino al sensor, mientras que el pin ECHO devuelve una señal digital desde el sensor al Arduino con la duración del pulso, que indica la distancia medida.
+
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+El sensor ultrasónico recibe valores de objetos los cuales pueden estar a una distancia de entre 2 cm y 400 cm, teniendo una precisión de aproximadamente 3 milímetros.
+
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+El sensor ultrasónico tiene 4 pines de conexión, los cuales son:
+1. VCC: se conecta a 5V del Arduino para alimentar el sensor.
+2. GND: se conecta a GND del Arduino.
+3. TRIG: es el pin activado por el arduino para emitir el sonido ultrasónico.
+4 ECHO: es el pin que recibe el eco del sonido y manda la señal al Arduino mostrando cuánto tiempo tardó.
+
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+Nosotros elegimos los pines digitales 9 y 10 para conectarlo asi como GND y 5V. Si bien lno hay una razon específica para elejir los pines 9 y 10, estos si deben ser digitales, ya que reciben y entregan valores los cuales deben ser HIGH o LOW.
+
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+¿Cuál es el principio de funcionamiento del componente?
+El sensor emite un pulso ultrasónico por el pin TRIG, el cual viaja por el aire, rebota contra un objeto y vuelve al sensor. El ECHO detecta el tiempo que tardó en regresar, por lo que el Arduino mide ese tiempo y calcula la distancia multiplicando el tiempo en que tarda en regresar el sonido por la velocidad del mismo, dividiendolo entre 2, obteniendo así la distancia.
+
+¿Utiliza alguna librería particular para programarlo?
+No, no es necesrio usar ninguna librería para programarlo, por lo que nosotros no usamos ninguna al momento de realizar la simulación.
+
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+El sensor envía un pulso al Arduino, y el programa mide su duración.
+Luego, el código convierte ese tiempo en centímetros multiplicando el tiempo en que tarda en volver el sonido por la velocidad del mismo, dividiendolo entre 2 ya que se considera la ida y la vuelta del mismo. Así se obtiene la distancia en centímetros que el sensor detecta.
+
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+Las limitaciones o precauciones que se deben tener son no medir objetos muy cercanos o muy lejos, ya que puede llegar a dañarse el componente, evitar usarlo en lugares con mucho ruido o viento ya que puede llegar a no funcionar correctamente, asegurarse de conectarlo correctamente ya que puede llegar a quemarse y evitar medir superficies que no reflejen bien el sonido, porque es posible que no funcione bien.
+
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+Antes de usarlo en el proyecto final, se puede probar con un código de prueba que muestre los valores en el monitor serial.
+Si al acercar o alejar un objeto los valores cambian correctamente, significa que el sensor funciona bien.
+
+Simular en Tinkercad e incluir el link de la simulación.
+https://www.tinkercad.com/things/5TT1qOPUnTB-simulacion-sensor-ultrasonico/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits
+
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+En la simulación, si la pelota entra al arco, se debería sumar un número al contador mostrado por el display, hasta que se toque el pulsador, lo que reiniciaría el contador.
+
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+Podríamos darnos cuenta de si funciona mal si los valores cambian sin mover nada, ya que puede haber un error en el código o si no imprime nada, puede ser que el pin TRIG o ECHO esté conectado a un pin incorrecto o que el componente este fallado.

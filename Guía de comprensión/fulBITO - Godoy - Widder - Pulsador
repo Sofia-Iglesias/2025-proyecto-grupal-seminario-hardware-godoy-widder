@@ -1,0 +1,43 @@
+Guía de Preguntas
+Nombre del componente: (Pulsador)
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+El pulsador es un sensor, porque detecta una acción física del usuario, como aplicar presión, y envía esa información al Arduino en forma de señal eléctrica.
+
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+Su función principal es permitir la interacción entre el usuario y el circuito. Cuando se presiona el pulsador, cierra el circuito y deja pasar corriente. Por otro lado cuando se suelta, abre el circuito y corta la corriente.
+Sirve para controlar acciones en el Arduino, como encender un LED o mover un motor.
+
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+El pulsador trabaja con señales digitales, por lo que el rango de valores con el que funciona este es de solo 2, HIGH y LOW. En caso de ser normal abierto, el circuito se cerrará al presionarlo, mientras que en caso de ser normal cerrado, el crcuito se abrirá al presionarlo.
+
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+Un pulsador común tiene cuatro patas, pero internamente están conectadas en 2 pares. En realidad, se usan dos pines funcionales , uno de entrada conectado al pin digital del Arduino por donde el Arduino detecta si el botón está presionado y otro conectado a GND o 5V dependiendo de si se usa resistencia pulldown o pullup. Cuando se presiona el botón, se conectao desconecta la corriente y el Arduino recibe el cambio de estado.
+
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+SNosotros lo conectamos al pin digital 2, al GND ya que usamos una resistencia pullup. Elegimos un pin digital porque el pulsador solo envía señales digitales.
+
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+¿Cuál es el principio de funcionamiento del componente?
+El pulsador funciona cerrando o abriendo un circuito eléctrico. Cuando lo presionás, los contactos internos se tocan y permiten el paso de la corriente, pero uando lo soltás, los contactos se separan y la corriente se interrumpe. Arduino detecta este cambio y lo interpreta como una señal digital.
+
+¿Utiliza alguna librería particular para programarlo?
+No, el pulsador no necesita ninguna librería para programarse, por lo que en nuestro caso no usamos ninguna.
+
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+El programa lee el estado del pin digital donde está conectado el pulsador. Si devuelve HIGH, el botón está presionado, pero si devuelve LOW, el botón está suelto.
+
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+Las limitaciones o precausiones que hay que tener al usar un pulsador son usar siempre una resistencia pullup o pulldown, porque los valores pueden flotar y no aplicar voltajes mayores a 5V porque pueden dañar el arduino.
+
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+Se podría probar con un código básico que muestre en el monitor serial si el botón está presionado o no.
+
+Simular en Tinkercad e incluir el link de la simulación.
+https://www.tinkercad.com/things/fYa4ftdTHK5-simulacion-pulsador/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits
+
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+En la simulación, cuando se presione el botón, el LED debería encenderse, mientras que al soltarse se apaga.
+
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+Si el LED no se prende, puede ser un problema de la coneión o del codigo. También podría ser que el pulsador o led esten dañados, por lo que no funcionarían.
+

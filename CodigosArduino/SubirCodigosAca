@@ -1,1 +1,104 @@
+int trigPin = 9;
+int echoPin = 10;
+int buzzerPin = 8;
+int buttonPin = 2;
 
+int segA = 3;
+int segB = 4;
+int segC = 5;
+int segD = 7;
+int segE = 11;
+int segF = 12;
+int segG = 13;
+
+int ledPin = 6;
+int potPin = A0;
+int ldrPin = A1;
+
+int countDisplay = 0;
+
+byte digits[10][7] = {
+  {0,0,0,0,0,0,1},
+  {1,0,0,1,1,1,1},
+  {0,0,1,0,0,1,0},
+  {0,0,0,0,1,1,0},
+  {1,0,0,1,1,0,0},
+  {0,1,0,0,1,0,0},
+  {0,1,0,0,0,0,0},
+  {0,0,0,1,1,1,1},
+  {0,0,0,0,0,0,0},
+  {0,0,0,0,1,0,0}
+};
+
+void setup() {
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  pinMode(buzzerPin, OUTPUT);
+  pinMode(buttonPin, INPUT_PULLUP);
+
+  pinMode(segA, OUTPUT);
+  pinMode(segB, OUTPUT);
+  pinMode(segC, OUTPUT);
+  pinMode(segD, OUTPUT);
+  pinMode(segE, OUTPUT);
+  pinMode(segF, OUTPUT);
+  pinMode(segG, OUTPUT);
+
+  pinMode(ledPin, OUTPUT);
+
+  Serial.begin(9600);
+  mostrarDigito(countDisplay);
+}
+
+void loop() {
+  long dur;
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  dur = pulseIn(echoPin, HIGH, 30000);
+  float dist = dur / 58.0;
+
+
+  if (dist > 0 && dist <= 15.0) {
+    digitalWrite(buzzerPin, HIGH);
+    delay(3000);
+    countDisplay = countDisplay + 1;
+    if (countDisplay > 9) countDisplay = 0;
+    mostrarDigito(countDisplay);
+    delay(300);
+  }
+
+  if (digitalRead(buttonPin) == LOW) {
+    countDisplay = 0;
+    mostrarDigito(countDisplay);
+    delay(300);
+  }
+
+
+  int ldrVal = analogRead(ldrPin);
+  int potVal = analogRead(potPin);
+
+ 
+  int ldrThreshold = 400;
+  if (ldrVal < ldrThreshold) {
+    int brillo = map(potVal, 0, 1023, 0, 255);
+    analogWrite(ledPin, brillo);
+  } else {
+    analogWrite(ledPin, 0);
+  }
+
+  delay(50);
+}
+
+void mostrarDigito(int n) {
+  if (n < 0 || n > 9) n = 0;
+  digitalWrite(segA, digits[n][0] ? HIGH : LOW);
+  digitalWrite(segB, digits[n][1] ? HIGH : LOW);
+  digitalWrite(segC, digits[n][2] ? HIGH : LOW);
+  digitalWrite(segD, digits[n][3] ? HIGH : LOW);
+  digitalWrite(segE, digits[n][4] ? HIGH : LOW);
+  digitalWrite(segF, digits[n][5] ? HIGH : LOW);
+  digitalWrite(segG, digits[n][6] ? HIGH : LOW);
+}

@@ -1,12 +1,12 @@
-# **`Bitácora de (Nombre del Proyecto)`**
+# **`Bitácora de (fulBITO)`**
 
 `Tecnología de los Sistemas de Información - Seminario Avanzado`  
 `Ciclo Lectivo 2025`
 
 ## **`Integrante/s`**
 
-- `Nombre 1`  
-- `Nombre 2`
+- `Juan Bautista Godoy`  
+- `Nicolás Matías Widder`
 
 
 ---
@@ -37,19 +37,20 @@
 
 ## **`Semana 2`**
 
-**`Fecha:`**
+**`Fecha: 03/11`**
 
 **`Actividades Realizadas:`**
 
-- `Actividad 1`  
-- `Actividad 2`
+- `README`  
+- `Guía de comprensión`
+- `Bitácora`
+- `Simulación`
 
 **`Dificultades:`**
 
-- `Dificultad 1`  
-- `Dificultad 2`
+- `Programación display 7 segmentos`
+- `Programación Sensor ultrasónico`
 
 **`Próximos Pasos:`**
 
-- `Próximo paso 1`  
-- `Próximo paso 2`
+- `Realizar el proyecto físico`

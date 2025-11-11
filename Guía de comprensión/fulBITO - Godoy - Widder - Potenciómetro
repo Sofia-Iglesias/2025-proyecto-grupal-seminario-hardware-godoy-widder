@@ -1,0 +1,46 @@
+Guía de Preguntas
+Nombre del componente: (Potenciómetro)
+
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+El potenciómetro es un sensor que detecta o mide un valor físico y lo convierte en una señal eléctrica que el Arduino puede leer.
+El potenciómetro puede entregar muchos valores diferentes según cuánto se gire.
+
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+El potenciómetro utiliza señales analógicas, porque los valores cambian gradualmente según la posición de la perilla.
+Por eso, se conecta a un pin analógico del Arduino, que puede leer valores desde 0 hasta 1023.
+
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+Cuando el potenciómetro está conectado a 5V y GND, si el eje está completamente a un lado el valor es de 0, mientras que si esta completamente al otro, este es de 1023. Es por esto que lee valores entre 0 y 1023.
+
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+El potenciómetro tiene tres patas, VCC se conecta al 5v del Arduino, GND se conecta a tierra del Arduino y el pin central que se conecta a un pin analógico.
+
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+Nosotros elegimos el pin analógico A0 porque el potenciómetro entrega una señal variable, no solo 0 o 1.
+Arduino convierte esa señal en un valor de 0 a 1023 mediante su conversor analógico-digital.
+
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+¿Cuál es el principio de funcionamiento del componente?
+El potenciómetro es una resistencia variable, ya que por dentro tiene una pista resistiva y un contacto deslizante, el cual cuando girás la perila se mueve a lo largo de la pista y cambia la proporción de resistencia entre los terminales, variando el voltaje que llega al pin central. Ese voltaje es lo que mide el arduino.
+
+¿Utiliza alguna librería particular para programarlo?
+No, no utiliza ninguna librería especial para programarlo, por lo que nosotros tampoco utilizamos ninguna.
+
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+El Arduino convierte el voltaje del potenciómetro en un número entre 0 y 1023. Si el eje está girado hacia un extremo, muestra 0. Si está para el otro lado, muestra 1023.
+En nuetro caso lo usamos para regular el brillo del led.
+
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+Las limitaciones o precauciones que hay que tener son no forzar el eje más allá del limite y no conectar mal los terminales porque puede afectar la lectura.
+
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+Se puede probar con un código simple que muestre en el monitor serial los valores del potenciómetro. Si los valores cambian de 0 a 1023 al girar laperila, el potenciómetro funciona bien.
+
+Simular en Tinkercad e incluir el link de la simulación.
+https://www.tinkercad.com/things/2WACxMZytyw-simulacion-potenciometro/editel
+
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+En la simulación esperaríamos lograr que el brillo del led varíesegun la posición de la perilla del potenciómetro.
+
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+El potenciómetro podría fallar si el valor siempre es 0 o 1023 porqur puede estar mal conectado, si el valor no cambia al girar, el potenciómetro puede estar dañado y también revisar que el pin analógico esté bien configurado en el código.

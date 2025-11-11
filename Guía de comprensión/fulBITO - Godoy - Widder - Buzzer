@@ -1,0 +1,39 @@
+Guía de Preguntas
+Nombre del componente: (Buzzer)
+
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+El buzzer es un actuador, por lo que recibe señales del Arduino y realiza una acción física la cual es producir un sonido. No mide nada como un sensor, sino que emite un zumbido o tono según la señal que recibe.
+
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+El buzzer se conecta por un lado a un pin digital, y por el otro a GND, por lo que funciona con solamente 2 valores, HIGH y LOW.
+
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+El rango de valores que puede recibir el componente es de 2, ya que al estar conectado a un pin digital, solo recive los valores HIGH o LOW.
+
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+El buzzer tiene 2 pines, el pin positivo se conecta a un pin digital del Arduino, mientras que el pin negativo se conecta a GND.
+
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+Nosotros utilizamos los pines 9 y GND para conectar el buzzer. Si pien no hay una razon específica para elegir este numero de pin, si necesitabamos que fuera digital para que trabaje con los valores HIGH y LOW.
+
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+
+
+¿Utiliza alguna librería particular para programarlo?
+No, no utiliza ninguna librería en particular para su uso, por lo que nosotros tampoco utilizamos ninguna.
+
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+El buzzer recibe una orden del Arduino, un valor HIGH lo hace sonar y un LOW lo apaga.
+
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+Las limitaciones o precausiones a tener en cuenta son no dejarlo sonar mucho tiempo seguido, puede calentarse y revisar la polaridad, porque conectar mal los pines puede dañarlo.
+
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+Podemos probarlo con un codigo simple, el cual le haga llegar una señal HIGH para asi garantizar que pueda emitir sonido.
+
+Simular en Tinkercad e incluir el link de la simulación. 
+https://www.tinkercad.com/things/0PQDAL2nTa7-simulacion-buzzer/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits
+
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+EL componente podría fallar si la polaridad o si el pin del Arduino está mal asignado, pero si suena todo el tiempo, probablemente el pin esté siempre en HIGH.
+

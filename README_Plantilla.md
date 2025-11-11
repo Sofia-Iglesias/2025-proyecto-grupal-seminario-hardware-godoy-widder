@@ -1,48 +1,52 @@
-# **`Nombre del Proyecto`**
+# **`FulBITO`**
 
 `Tecnología de los Sistemas de Información - Seminario Avanzado`  
 `Ciclo Lectivo 2025`
 
 ## **`Integrante/s`**
 
-- `Nombre 1`  
-- `Nombre 2`
+- `Juan Bautista Godoy`  
+- `Nicolás Matías Widder`
 
 ## **`Objetivo`**
 
-`Breve descripción del propósito del proyecto. Completar una vez definido el proyecto.`
+`Este proyecto tiene como objetivo facilitar el funcioncionamiento del sistema de conteo de goles en el fútbol, garantizando su funcionamiento de una manera más eficiente, transparente y con la aplicación de tecnología. `
 
 ## **`Descripción del Proyecto`**
 
-`Explicar en qué consiste y qué se busca lograr. Completar una vez definido el proyecto.`
+`Este proyecto consiste en un arco de fútbol, es cual cuenta con funciones automatizadas, tales como conteo de goles, alertas sonoras y visuales e iluminación. El objetivo de este proyecto es permitir el conteo de goles en los deportes de una manera más facil, transparente y ráída mediante la aplicación de las tecnologías especificadas.`
 
 ## **`Componentes`**
 
-- `Componente 1`  
-- `Componente 2`  
-- `Componente 3`
-
-`Completar una vez definido el proyecto.`
+- `Led RGB`  
+- `Display de 7 segmentos`  
+- `Buzzer`
+- `Sensor ultrasónico`
+- `Sensor LDR`
+- `Potenciómetro`
+- `2 Pulsadores`
+- `Protoboard`
+- `Arduino UNO`
 
 ## **`Requisitos`**
 
-- `Software necesario`  
-- `Librerías`  
-- `Hardware adicional`
-
-`Completar una vez definido el proyecto.`
+- `No Necesitamos software adicional`  
+- `No necesitamos librerias`  
+- `No necesitamos hardware adicional`
 
 ## **`Etapas del proyecto`**
 ### Etapa 1:
-- `Acción 1`
-- `Acción 2`
+- `Creacion de proyecto en tinkercad`
+- `Selección de componentes en el proyecto`
 
 ### Etapa 2:
-- `Acción 1`
-- `Acción 2`
+- `Conexión de componentes`
+- `Programación de Arduino`
 
 ## **`Extras`**
 
-- `Extra 1`  
-- `Extra 2`  
-- `Extra 3`
+- `Realización física del proyecto`
+- `Diseño 3D de componentes adicionales`
+
+Link a la simulación: https://www.tinkercad.com/things/ghHdiRQp2EX-tp-hard-fulbito/editel?returnTo=%2Fthings%2FghHdiRQp2EX-tp-hard-fulbito
+Diagramas: https://drive.google.com/file/d/1_n9-y71CqFvV7B7twQ2t8BHC3ZL2LE6w/view?usp=sharing
